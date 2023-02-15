@@ -23,9 +23,7 @@ onMounted(() => {
 </script>
 
 <template>
-<!-- {{discussions}} -->
-
-<section class="continer">
+<section class="container">
     <div class="addComment">
         <img class="avatar" src="profile.jpeg"/>
         <div class="text">
@@ -52,7 +50,3 @@ onMounted(() => {
 
 </template>
 
-<style scoped>
-
-
-</style>

@@ -27,7 +27,7 @@
 
             <div class="replies" v-if="replies != undefined && replies?.length != 0">
            
-                <comment v-for="(replay, index) in replies" :key="index" 
+                <comment v-for="(replay , index) in replies" :key="index" 
                     :id="replay.id"
                     :user="replay.user"
                     :date="replay.date"
@@ -59,7 +59,7 @@ const props = defineProps({
     date : {type: Number, default:0},
     likes : {type: Number, default:0},
     iLikedIt : {type: Boolean, default: false},
-    replies : {type: Array},
+    replies : {type: Object},
     text : {type: String, default:''}
 })
 

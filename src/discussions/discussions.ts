@@ -6,7 +6,7 @@ interface IUser {
 }
 interface IComment {
     id: number;
-    date: number; // unix timestamp in milliseconds.
+    date: number; 
     user: IUser;
     text: string;
     likes: number;
@@ -99,8 +99,11 @@ export function addComment(text: string){
 }
 
 export function deleteComment(id : number){
-   
+//    comming soon :)
     
+}
+export function replayToComment(id: number, parentId: number, text: string){
+    // comming soon in the next update :)
 }
 export function likeComment(id:number, iLikeIt: boolean){
 
